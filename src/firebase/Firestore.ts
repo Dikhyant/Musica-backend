@@ -1,10 +1,11 @@
-const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
-const { getFirestore } = require('firebase-admin/firestore');
+import { initializeApp, applicationDefault, cert } from "firebase-admin/app";
+import { getFirestore } from "firebase-admin/firestore";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 initializeApp({
-    credential: {
-        
-    }
-  });
+    credential: cert(JSON.parse(process.env.FIREBASE_ADMIN_SDK_CREDENTIAL as string))
+});
   
-  const db = getFirestore();
+export const db = getFirestore();
