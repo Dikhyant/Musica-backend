@@ -9,6 +9,8 @@ export interface MusicItem {
 
 export interface Song extends MusicItem {
     artistName:string;
+    songUrl: string;
+
 }
 
 export interface Album extends MusicItem {

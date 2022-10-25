@@ -45,6 +45,7 @@ export const songs:RequestHandler = async (request, response) => {
                 artistName: songData.artistName,
                 name: songData.name,
                 thumbnailUrl: songData.thumbnailUrl,
+                songUrl: songData.songUrl,
                 runtime: songData.runtime,
                 isLiked: false
             });
