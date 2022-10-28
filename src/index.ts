@@ -3,7 +3,6 @@ import bodyParser from 'body-parser';
 import * as dotenv from "dotenv";
 import cors from "cors";
 
-import { db } from "./firebase/Firestore";
 import { router } from './routes/Get';
 
 dotenv.config();
