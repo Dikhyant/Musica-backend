@@ -1,3 +1,4 @@
 /node_modules
 /secret_keys
+/dist
 .env
